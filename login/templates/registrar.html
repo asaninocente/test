@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block contenido %}
+
+<h3>Registro</h3>
+<form method="POST">
+  {{ formulario.hidden_tag() }}<br/>
+  {{ formulario.email.label }} {{ formulario.email }}<br/>
+  {{ formulario.nombre.label }} {{ formulario.nombre }}<br/>
+  {{ formulario.password.label }} {{ formulario.password }}<br/>
+  {{ formulario.password_repetir.label }} {{ formulario.password_repetir }}<br/>
+  {{ formulario.boton }}
+</form>
+{% endblock %}

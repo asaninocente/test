@@ -1,0 +1,10 @@
+{% extends "vista_base.html" %}
+
+{% block contenido %}
+<h3>Listado de mascotas</h3>
+<ul>
+{% for mascota in mascotas %}
+  <li>{{ mascota }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

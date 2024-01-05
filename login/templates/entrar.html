@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block contenido %}
+
+<h3>Iniciar sesión</h3>
+<form method="POST">
+  {{ formulario.hidden_tag() }}
+  {{ formulario.email.label }} {{ formulario.email }}
+  {{ formulario.password.label }} {{ formulario.password }}
+  {{ formulario.boton }}
+</form>
+{% endblock %}
